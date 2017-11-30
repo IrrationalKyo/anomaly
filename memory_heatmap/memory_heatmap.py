@@ -1,5 +1,6 @@
 import numpy as np
 import math
+from sklearn import mixture
 
 ''' memory_trace is a list of memories accesses in sequential order '''
 def creat_heatmap(memory_trace, addr_base, size, delta):
@@ -13,4 +14,5 @@ def creat_heatmap(memory_trace, addr_base, size, delta):
         heatmap[index] += 1
     return heatmap
 
+def learn_heatmap():
 
